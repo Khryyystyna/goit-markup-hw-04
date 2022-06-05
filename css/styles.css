@@ -253,9 +253,10 @@ body {
     margin-right: 0;
 }
 
-.icon-benefits {
+.benefits-logo {
     display: flex;
-    padding: 25px 100px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--background-top-color);
     width: 270px;
     height: 120px;
@@ -408,17 +409,25 @@ body {
     align-items: center;
 }
 
-.clients-item:hover, 
-.clients-item:focus {
-    fill: var(--accent-color);
-}
-
-.clients-icon {
+.clients-item {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
+}
+
+.clients-item:hover, 
+.clients-item:focus {
+    border-color: var(--accent-color);
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: #AFB1B8;
 }
 
@@ -430,12 +439,11 @@ body {
     margin-right: 0;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-   fill: var(--accent-color);
-   border-color: var(--accent-color);
+.icon-link:hover,
+.icon-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
-
 
 
 
@@ -452,6 +460,7 @@ body {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-adress {
@@ -491,7 +500,6 @@ body {
 }
 
 .soc-title {
-    padding-top: 12px;
     margin-bottom: 20px;
     align-items: baseline;
 }
@@ -616,7 +624,11 @@ body {
     padding: 20px 24px;
 }
 
-.card-suggestions-hover:hover {
+.suggestion-link {
+    display: block;
+}
+
+.suggestion-link:hover {
     box-shadow: var(--card-shadow-hover);
 }
 
